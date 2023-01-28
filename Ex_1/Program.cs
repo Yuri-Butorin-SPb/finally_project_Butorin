@@ -1,4 +1,4 @@
-﻿string[] arr = new string [4];
+string[] arr = new string [4];
 int count = arr.Length;
 
 for (int i = 0; i < count; i++)
@@ -17,9 +17,15 @@ for (int i = 0; i < count; i++)
 
 string[] arr2 = new string [sum]; // Добавляю элементы с первого массива во второй
 
-for (int i = 0; i < count; i++) 
+
+int k = 0;
+for (int i = 0; i < arr.Length; i++) 
 {
-    if (arr[i].Length <= 3) arr2[i] = arr[i];
+    if (arr[i].Length <= 3) 
+    {
+    arr2[k] = arr[i];
+    k++;
+    }
 }
 
 
